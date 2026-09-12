@@ -118,7 +118,7 @@ function fetchRemoteTime() {
         path: "/",
         method: "HEAD",
         timeout: 5000,
-        headers: { "User-Agent": "Miller-Life-Data/1.0" },
+        headers: { "User-Agent": "Personal-Data-Repo/1.0" },
       },
       (res) => {
         const dateStr = res.headers.date;
