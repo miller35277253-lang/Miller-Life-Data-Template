@@ -1,1 +1,0 @@
-{"id": "daughter_weight-example-001", "type": "daughter_weight", "data": {"time": "2026-01-01T00:00:00+08:00", "weight": 20.0, "fat": 15.0, "height": 120, "note": "示例记录"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}
