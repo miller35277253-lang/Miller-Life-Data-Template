@@ -1,0 +1,1 @@
+{"id": "membership-example-001", "type": "membership", "data": {"name": "示例会员卡", "category": "次卡", "merchant": "示例商家", "totalCount": 10, "usedCount": 2, "remainingCount": 8, "status": "active", "note": "示例会员卡"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}

@@ -1,0 +1,14 @@
+{
+  "id": "person-example-001",
+  "name": "示例：张三",
+  "relation": "朋友",
+  "contact": {
+    "phone": "",
+    "wechat": "",
+    "email": ""
+  },
+  "note": "这是一个示例人物档案，用户使用时请删除或覆盖",
+  "activityIds": [],
+  "expenseIds": [],
+  "createdAt": "2026-01-01T00:00:00+08:00"
+}

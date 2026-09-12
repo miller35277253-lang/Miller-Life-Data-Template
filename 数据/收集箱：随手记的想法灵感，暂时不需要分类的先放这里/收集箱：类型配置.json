@@ -1,0 +1,15 @@
+{
+  "key": "inbox",
+  "name": "收集箱",
+  "description": "随手捕捉的想法、灵感、待办雏形。未分类前先放这里，后续可转化为具体记录类型（activity/task/intake/expense等）",
+  "storage": "数据/收集箱：随手记的想法灵感，暂时不需要分类的先放这里/",
+  "usesDataWrapper": false,
+  "archiveStorage": "data/收集箱：随手记的想法灵感，暂时不需要分类的先放这里/收集箱：已转化/已转化.jsonl",
+  "核心约束": [
+    "time必须有",
+    "content必须有",
+    "是临时中转，不是最终归宿，后续要归类或新建类型"
+  ],
+  "排序规则": "活跃单JSON，已转化在已转化.jsonl",
+  "dateField": "createdAt"
+}

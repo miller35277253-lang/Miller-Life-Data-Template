@@ -1,0 +1,1 @@
+{"id": "poem-example-001", "type": "poem", "data": {"time": "2026-01-01T00:00:00+08:00", "title": "示例诗歌", "content": "示例诗歌内容...", "commandId": "command-example-010"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}

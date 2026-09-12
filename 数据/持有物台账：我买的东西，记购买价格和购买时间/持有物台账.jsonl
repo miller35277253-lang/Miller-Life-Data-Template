@@ -1,0 +1,1 @@
+{"id": "item-example-001", "type": "item", "data": {"name": "示例物品", "purchaseDate": "2026-01-01", "purchasePrice": 100, "category": "示例分类", "status": "active", "note": "示例持有物"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}

@@ -1,0 +1,1 @@
+{"id": "steps-example-001", "type": "steps", "data": {"date": "2026-01-01", "steps": 8000, "note": "示例：今日步数", "commandId": "command-example-005"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}

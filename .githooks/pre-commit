@@ -1,0 +1,18 @@
+#!/bin/sh
+# 数据校验：不通过则阻止提交（与 GitHub Action 同一套检查，禁止绕过）
+cd "$(git rev-parse --show-toplevel)" || exit 1
+output=$(node 能力/数据工具.mjs validate 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+  printf '%s\n' "$output"
+  echo "✗ 数据校验未通过，提交已阻止（先修复数据，再重新提交）"
+  exit 1
+fi
+output=$(node 能力/数据检查/关联检查.mjs 2>&1)
+rc=$?
+if [ "$rc" -ne 0 ]; then
+  printf '%s\n' "$output"
+  echo "✗ 关联检查未通过，提交已阻止（先修复关联，再重新提交）"
+  exit 1
+fi
+exit 0

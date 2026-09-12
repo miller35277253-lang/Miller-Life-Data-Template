@@ -1,0 +1,1 @@
+{"id": "weight-example-001", "type": "weight", "data": {"time": "2026-01-01T08:00:00+08:00", "value": 70.0, "fat": 20.0, "note": "示例：体脂秤测量", "timeSource": "user", "commandId": "command-example-004"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "screenshot", "status": "written"}}

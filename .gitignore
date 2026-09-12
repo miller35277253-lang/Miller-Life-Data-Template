@@ -1,0 +1,26 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时/缓存
+*.tmp
+*.log
+node_modules/
+__pycache__/
+*.pyc
+
+# 潜在敏感/凭据（若存在）
+.env
+*.key
+*.pem
+
+# 可视化规范文档里的本地导出可忽略（如需保留请注释）
+
+# 一次性渲染产物（可再生快照，不入库）
+reports/
+.trae-html-share-packages/
+
+# 本地工作台：仅本机使用，不入云端（云端只放数据库+工作流规则+AI核心工具）
+工作台/
+tools/workbench.mjs
+backup_*/

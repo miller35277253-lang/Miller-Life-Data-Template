@@ -1,0 +1,14 @@
+{
+  "key": "config",
+  "name": "配置",
+  "description": "我的预算、目标等用来聚合的数据，用于报表统计和数据聚合时的参照",
+  "storage": "数据/配置：我的预算、目标等用来聚合的数据/",
+  "usesDataWrapper": false,
+  "核心约束": [
+    "每个配置项一个单独的JSON文件",
+    "文件名即配置项名称（如 预算_2026-09.json、健康目标.json）",
+    "不是JSONL格式，是多文件JSON"
+  ],
+  "排序规则": "按文件名排序",
+  "dateField": "createdAt"
+}

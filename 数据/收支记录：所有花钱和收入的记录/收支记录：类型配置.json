@@ -1,0 +1,18 @@
+{
+  "key": "expense",
+  "name": "财务支出",
+  "description": "支出/收入记录，字段对齐随手记账本导出的13列。源数据一律原样保留，不擅自清理或改写。",
+  "storage": "数据/收支记录：所有花钱和收入的记录/收支记录.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "time必须有，ISO 8601格式",
+    "amount必须有，单位元",
+    "category必须有（收入/支出）",
+    "按time排序插入"
+  ],
+  "fields": {
+    "relatedMembershipId": "关联的会员卡/套餐记录ID"
+  },
+  "排序规则": "按time降序",
+  "dateField": "time"
+}

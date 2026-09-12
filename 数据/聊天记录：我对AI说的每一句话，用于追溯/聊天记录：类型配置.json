@@ -1,0 +1,21 @@
+{
+  "key": "command",
+  "name": "聊天记录",
+  "description": "用户的每一条原始指令和AI的每一条回复，用于追溯和防丢失。包含command（用户输入）和reply（AI回复）两种类型，同一轮对话序号相同。采用滞后存储：每一轮开始时存上一轮的reply + 当前轮的command。按月分文件存储（聊天记录-YYYY-MM.jsonl），纯追加写，不修改。",
+  "storage": "数据/聊天记录：我对AI说的每一句话，用于追溯/",
+  "usesDataWrapper": false,
+  "核心约束": [
+    "time必须有",
+    "content必须有（原文内容）",
+    "包含两种type：command（用户输入）和reply（AI回复）",
+    "同一轮对话的command和reply序号相同（如command-20260911-00001 对应 reply-20260911-00001）",
+    "reply必须带commandId，指向对应的用户输入",
+    "采用滞后存储：每一轮开始时先存上一轮的reply，再存当前轮的command",
+    "用户在AI回复前连续发多条消息时，合并成一条command保存",
+    "定时任务触发的source为system，正常聊天的source为chat",
+    "AI能从上下文里拿到什么就存什么，不编造，不存AI看不到的二进制内容（图片/图表等只存工具返回的文本描述和路径）",
+    "纯追加写，不修改历史"
+  ],
+  "排序规则": "纯追加，按月分文件",
+  "dateField": "time"
+}

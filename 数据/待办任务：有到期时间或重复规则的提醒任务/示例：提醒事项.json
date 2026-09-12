@@ -1,0 +1,12 @@
+{
+  "id": "task-example-001",
+  "title": "示例：提醒事项",
+  "type": "reminder",
+  "triggerType": "one_time",
+  "dueDate": "2026-01-15",
+  "dueTime": "09:00",
+  "status": "pending",
+  "note": "这是一个示例任务，用户使用时请删除或覆盖",
+  "createdAt": "2026-01-01T00:00:00+08:00",
+  "commandId": "command-example-006"
+}

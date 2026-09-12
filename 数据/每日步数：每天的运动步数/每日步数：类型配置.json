@@ -1,0 +1,14 @@
+{
+  "key": "steps",
+  "name": "运动步数",
+  "description": "每日运动步数统计",
+  "storage": "数据/每日步数：每天的运动步数/每日步数.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "date必须有（YYYY-MM-DD）",
+    "steps必须有（步数）",
+    "禁止同一天写多条"
+  ],
+  "排序规则": "按date降序",
+  "dateField": "date"
+}

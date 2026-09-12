@@ -1,0 +1,14 @@
+{
+  "key": "person",
+  "name": "人物",
+  "description": "家人/朋友/同事等人物实体，记录通过 peopleIds 关联人物",
+  "storage": "数据/我认识的人：我认识的所有人物/",
+  "usesDataWrapper": false,
+  "核心约束": [
+    "name必须有",
+    "是用户认识的人，不是用户自己",
+    "relation（单数=和我的关系，字符串）和relations（复数=和其他人的关系，数组）含义不同，不统一"
+  ],
+  "排序规则": "单JSON文件，按name排序",
+  "dateField": "createdAt"
+}

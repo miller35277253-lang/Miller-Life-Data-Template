@@ -1,0 +1,17 @@
+{
+  "key": "intake",
+  "name": "饮食摄入",
+  "description": "每日饮食摄入记录，包括饮水、餐饮、热量。是饮水量和卡路里统计的唯一数据源。",
+  "storage": "数据/饮食摄入：吃喝记录，饮水量和卡路里记录/饮食摄入.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "time必须有",
+    "item必须有（禁止用food）",
+    "amount必须有",
+    "intakeType必须有（drink=计入饮水/food=不计入），是饮水量统计的唯一依据",
+    "一级分类用categoryL1（禁止用meal），二级分类用categoryL2（禁止用subcategory）",
+    "按time排序插入"
+  ],
+  "排序规则": "按time降序",
+  "dateField": "time"
+}

@@ -1,0 +1,1 @@
+{"id": "diary-example-001", "type": "diary", "data": {"time": "2026-01-01T20:00:00+08:00", "title": "示例日记", "content": "这是一篇示例日记。", "commandId": "command-example-008"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}

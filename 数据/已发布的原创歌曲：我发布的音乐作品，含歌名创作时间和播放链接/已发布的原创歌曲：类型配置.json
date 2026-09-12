@@ -1,0 +1,14 @@
+{
+  "key": "song",
+  "name": "原创音乐作品",
+  "description": "用户自己创作的音乐作品目录。记录歌名、创作时间、播放链接、创作背景等。与收藏（collection，别人的作品）和编曲（arrangement，谱子）严格分开。有完整谱子的通过 arrangementId 双向关联到 arrangement。",
+  "storage": "数据/已发布的原创歌曲：我发布的音乐作品，含歌名创作时间和播放链接/已发布的原创歌曲.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "title必须有",
+    "createDate必须有",
+    "是已发布的原创歌曲"
+  ],
+  "排序规则": "按createDate降序",
+  "dateField": "time"
+}

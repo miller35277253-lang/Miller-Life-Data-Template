@@ -1,0 +1,29 @@
+{
+  "key": "membership",
+  "name": "会员卡与套餐",
+  "description": "记录我的会员卡、储值卡、套餐卡的余额、次数和到期时间",
+  "storage": "会员卡与套餐.jsonl",
+  "idPattern": "membership-YYYYMMDD-5位序号",
+  "fields": {
+    "name": "卡/套餐名称",
+    "category": "类型：次卡/储值卡/会员卡/订阅",
+    "merchant": "商家/门店名称",
+    "address": "门店地址",
+    "totalCount": "总次数（次卡用）",
+    "usedCount": "已用次数",
+    "remainingCount": "剩余次数",
+    "balance": "余额（储值卡用）",
+    "expireDate": "到期时间",
+    "purchaseDate": "购买/开通时间",
+    "purchaseAmount": "购买/充值金额",
+    "status": "状态：active/expired/used_up",
+    "note": "备注",
+    "relatedExpenseId": "关联的消费记录ID"
+  },
+  "rules": [
+    "每次使用次卡或储值卡消费时，必须更新对应记录的usedCount/remainingCount或balance",
+    "status为expired或used_up的卡不再参与余额/次数统计",
+    "购买时关联对应的消费记录ID"
+  ],
+  "dateField": "createdAt"
+}

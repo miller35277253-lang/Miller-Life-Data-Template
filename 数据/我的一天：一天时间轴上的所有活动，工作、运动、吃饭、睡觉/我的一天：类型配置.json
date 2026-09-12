@@ -1,0 +1,17 @@
+{
+  "key": "activity",
+  "name": "活动时间块",
+  "description": "一天时间轴上的任意时段，合并睡眠/家务/工作/运动/社交等所有活动。是最基础的时间记录类型。",
+  "storage": "数据/我的一天：一天时间轴上的所有活动，工作、运动、吃饭、睡觉/我的一天.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "startTime必须有，ISO 8601格式+08:00时区",
+    "activity（活动名）必须有，用activity字段，禁止用title/content",
+    "category必须有，中文分类（如工作/运动/吃饭/睡眠/家务/社交/交通/家庭活动）",
+    "endTime用户没明确说结束就留空，禁止自行补结束时间",
+    "按startTime降序插入，禁止简单append到末尾",
+    "瞬时事件startTime=endTime"
+  ],
+  "排序规则": "按startTime降序",
+  "dateField": "startTime"
+}

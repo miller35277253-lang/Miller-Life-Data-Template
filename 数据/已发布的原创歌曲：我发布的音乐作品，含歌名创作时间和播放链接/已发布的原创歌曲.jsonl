@@ -1,0 +1,1 @@
+{"id": "song-example-001", "type": "song", "data": {"time": "2026-01-01T00:00:00+08:00", "title": "示例歌曲", "artist": "示例歌手", "neteaseId": "", "playUrl": "", "createDate": "2026-01-01", "createLocation": "示例城市", "note": "示例歌曲"}, "meta": {"createdAt": "2026-01-01T00:00:00+08:00", "source": "chat", "status": "written"}}

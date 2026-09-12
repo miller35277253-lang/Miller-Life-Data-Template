@@ -1,0 +1,23 @@
+{
+  "key": "task",
+  "name": "任务",
+  "description": "待办提醒任务。支持两种触发方式：①时间触发（有dueDate和remindTime，到点自动提醒）；②事件触发（无dueDate，靠triggerCondition描述触发条件，AI检查任务列表时看到并根据上下文判断是否提醒）。活跃任务单JSON文件，完成/取消后归档到 completed.jsonl。长期项目请使用独立的 project 类型。",
+  "storage": "数据/待办任务：有到期时间或重复规则的提醒任务/",
+  "usesDataWrapper": false,
+  "archiveStorage": "data/待办任务：有到期时间或重复规则的提醒任务/待办任务：已归档/已完成.jsonl",
+  "核心约束": [
+    "title必须有",
+    "status必须有（active/completed/cancelled/paused）",
+    "recurrence必须有（one_time/daily/weekly等）",
+    "禁止用notes（用description）、dueTime（用remindTime）",
+    "时间触发任务：必须有dueDate和remindTime",
+    "事件触发任务（无固定时间）：triggerType必须为event，必须有triggerCondition，不设dueDate和remindTime"
+  ],
+  "字段说明": {
+    "triggerType": "触发类型，可选值：time（时间触发，默认）、event（事件触发，无固定时间）",
+    "triggerCondition": "事件触发条件描述，如'下一次回射洪时提醒'、'用户提到XX时触发'",
+    "triggerKeywords": "事件触发关键词列表，可选，帮助AI匹配上下文"
+  },
+  "排序规则": "活跃任务按创建时间，已归档在已完成.jsonl",
+  "dateField": "dueDate"
+}

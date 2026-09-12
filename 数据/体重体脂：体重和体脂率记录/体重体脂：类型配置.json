@@ -1,0 +1,15 @@
+{
+  "key": "weight",
+  "name": "体重",
+  "description": "体重及体脂率记录",
+  "storage": "数据/体重体脂：体重和体脂率记录/体重体脂.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "time必须有",
+    "value必须有（体重kg）",
+    "fat必须有（体脂率%）",
+    "禁止填斤/磅，一律kg"
+  ],
+  "排序规则": "按time降序",
+  "dateField": "time"
+}

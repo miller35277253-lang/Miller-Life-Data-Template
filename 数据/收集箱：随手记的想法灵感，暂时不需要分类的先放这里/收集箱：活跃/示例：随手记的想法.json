@@ -1,0 +1,8 @@
+{
+  "id": "inbox-example-001",
+  "content": "示例：这是一个随手记的想法，暂时不需要分类",
+  "status": "active",
+  "createdAt": "2026-01-01T00:00:00+08:00",
+  "commandId": "command-example-007",
+  "note": "这是一个示例收集箱条目，用户使用时请删除或覆盖"
+}

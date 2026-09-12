@@ -1,0 +1,10 @@
+{
+  "id": "project-example-001",
+  "name": "示例：个人项目",
+  "status": "active",
+  "startDate": "2026-01-01",
+  "description": "这是一个示例项目，用户使用时请删除或覆盖",
+  "activityIds": [],
+  "expenseIds": [],
+  "createdAt": "2026-01-01T00:00:00+08:00"
+}

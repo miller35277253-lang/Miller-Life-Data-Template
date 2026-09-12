@@ -1,0 +1,15 @@
+{
+  "key": "lyric",
+  "name": "歌词",
+  "description": "用户创作的歌词/音乐作品，支持多阶段创作（作词/作曲/编曲/演唱分别记录）",
+  "storage": "数据/歌词作品：我写的歌词/歌词作品.jsonl",
+  "usesDataWrapper": true,
+  "核心约束": [
+    "time必须有",
+    "title必须有",
+    "content必须有",
+    "是自己写的歌词，不是收藏"
+  ],
+  "排序规则": "按time降序",
+  "dateField": "time"
+}

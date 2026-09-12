@@ -1,0 +1,14 @@
+{
+  "key": "project",
+  "name": "项目",
+  "description": "跨数据类型聚合（项目/长期计划/兴趣等），记录通过 projectId 关联项目",
+  "storage": "数据/我的项目：长期项目或者主题任务/",
+  "usesDataWrapper": false,
+  "核心约束": [
+    "name必须有",
+    "status必须有（active/completed/paused）",
+    "禁止用notes（用note）"
+  ],
+  "排序规则": "单JSON文件",
+  "dateField": "createdAt"
+}
